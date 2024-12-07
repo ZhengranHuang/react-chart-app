@@ -5,7 +5,7 @@ import './App.css'
 import BarChart from 'BarChart'
 import BubbleChart from 'BubbleChart'
 import ScatterChart from 'ScatterChart'
-import BarChart from 'BarChart'
+import LineChart from 'LineChart'
 const [chartData, setChartData] = useState(null);
 useEffect(() => {
   fetch('/financial_data.json')
