@@ -1,11 +1,12 @@
 //Task3:Implement Specific Chart Components
+import ChartComponent from 'ChartComponent'
 const BarChart = ({ data }) => {
   const barChartData = {
-    labels: data.months,
+    labels: financial_data.months,
     datasets: [
       {
         label: 'Monthly Sales',
-        data: data.sales,
+        data: financial_data.sales,
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderColor: 'rgba(75, 192, 192, 1)',
         borderWidth: 1,
@@ -21,3 +22,4 @@ const BarChart = ({ data }) => {
   };
     return <ChartComponent type="bar" data={barChartData} options={barChartOptions} />;
 };
+export default BarChart

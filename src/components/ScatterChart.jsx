@@ -1,13 +1,14 @@
 //Task3:Implement Specific Chart Components
-const LineChart = ({ data }) => {
+import ChartComponent from 'ChartComponent'
+const ScatterChart = ({ data }) => {
     const ScatterChartData = {
-      labels: data.profits, data,expenses,
+      labels: financial_data.profits, data,expenses,
       datasets: [
         {
           label: 'expenses',
-          data: data.expenses,
+          data: financial_data.expenses,
           label: 'profits',
-          data: data.profits,
+          data: financial_data.profits,
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
@@ -23,3 +24,4 @@ const LineChart = ({ data }) => {
     };
     return <ChartComponent type="scatter" data={ScatterChartData} options={ScatterChartOptions} />;
   };
+  export default ScatterChart

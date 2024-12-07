@@ -1,15 +1,16 @@
 //Task3:Implement Specific Chart Components
+import ChartComponent from 'ChartComponent'
 const BubbleChart = ({ data }) => {
     const BubbleChartData = {
-      labels: data.profits, data,expenses,
+      labels: financial_data.profits, financial_data,expenses,
       datasets: [
         {
           label: 'expenses',
-          data: data.expenses,
+          data: financial_data.expenses,
           label: 'profits',
-          data: data.profits,
+          data: financial_data.profits,
           label: 'sales',
-          data: data.sales,
+          data: financial_data.sales,
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
@@ -25,3 +26,4 @@ const BubbleChart = ({ data }) => {
     };
     return <ChartComponent type="bubble" data={BubbleChartData} options={BubbleChartOptions} />;
   };
+  export default BubbleChart

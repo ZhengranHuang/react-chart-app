@@ -1,6 +1,11 @@
+//Task4:Fetch Data for Charts&Task5:Render Charts in the App
 import { useState } from 'react'
 import './App.css'
-//Task4:Fetch Data for Charts
+//Import and render the chart components with fetched data.
+import BarChart from 'BarChart'
+import BubbleChart from 'BubbleChart'
+import ScatterChart from 'ScatterChart'
+import BarChart from 'BarChart'
 const [chartData, setChartData] = useState(null);
 useEffect(() => {
   fetch('/financial_data.json')
@@ -8,6 +13,7 @@ useEffect(() => {
     .then((data) => setChartData(data));
 }, []);
 if (!chartData) {
+//Display a loading message while data is being fetched
   return <div>Loading...</div>;
 }
 return (
