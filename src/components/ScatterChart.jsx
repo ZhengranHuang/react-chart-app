@@ -1,3 +1,4 @@
+//Task3:Implement Specific Chart Components
 const LineChart = ({ data }) => {
     const ScatterChartData = {
       labels: data.profits, data,expenses,

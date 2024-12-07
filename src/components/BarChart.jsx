@@ -1,3 +1,4 @@
+//Task3:Implement Specific Chart Components
 const BarChart = ({ data }) => {
   const barChartData = {
     labels: data.months,
@@ -18,5 +19,5 @@ const BarChart = ({ data }) => {
       },
     },
   };
-  return <ChartComponent type="bar" data={barChartData} options={barChartOptions} />;
+    return <ChartComponent type="bar" data={barChartData} options={barChartOptions} />;
 };
