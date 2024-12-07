@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-
+//Task4:Fetch Data for Charts
 const [chartData, setChartData] = useState(null);
 useEffect(() => {
-  fetch('/data.json')
+  fetch('/financial_data.json')
     .then((response) => response.json())
     .then((data) => setChartData(data));
 }, []);
